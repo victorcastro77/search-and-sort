@@ -15,7 +15,12 @@ public class Selection
    * Returns the sorted array
    */
   public static int[] sort(int[] arr) {
-    
+    int i = 0;
+    int j;
+    int min;
+    int temp;
+    int minIndex;
+    if (i < N -1
   }
   
   public static void main(String[] args) {
