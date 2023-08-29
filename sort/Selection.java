@@ -15,8 +15,7 @@ public class Selection
    * Returns the sorted array
    */
   public static int[] sort(int[] arr) {
-    // Your algorithm goes here!
-
+    
   }
   
   public static void main(String[] args) {

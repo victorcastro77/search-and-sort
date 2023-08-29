@@ -15,12 +15,16 @@ public class Insertion
    * Returns the sorted array
    */
   public static int[] sort(int[] arr) {
-    for (int i = 1; i < arr.length-1; i++) {
-        if (arr[i] < arr[i+1]) {
-            arr[i] = arr[i-1];
+    for (int i = 1; i < arr.length; i++) {
+        int key= arr[i];
+        int j = i - 1;
+        while ((j > -1) && (arr[j] > key)) {
+            arr[j+1] = arr[j];
+            j--;
         }
+        arr[j+1] = key;
     }
-
+return arr;
   }
   
   public static void main(String[] args) {
