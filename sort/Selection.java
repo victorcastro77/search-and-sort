@@ -15,16 +15,18 @@ public class Selection
    * Returns the sorted array
    */
   public static int[] sort(int[] arr) {
-    int key;
-    int min;
-    int temp;
-    int minIndex;
     for (int i = 0; i < arr.length - 1; i++) {
         int index = i;
         for (int j = i + 1; j <arr.length; j++) {
-            if (arr[j] < arr[index
+            if (arr[j] < arr[index]) {
+                index = j;
+            }
         }
+        int N = arr[index];
+        arr[index] = arr[i];
+        arr[i] = N;
     }
+    return arr;
   }
   
   public static void main(String[] args) {
