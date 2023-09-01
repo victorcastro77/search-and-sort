@@ -15,7 +15,7 @@ public class Merge
    * Returns the sorted array
    */
   public static int[] sort(int[] arr) {
-    arr.length = arr.length/2;
+    for (
     return arr;
   }
 
