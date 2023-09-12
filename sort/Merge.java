@@ -37,7 +37,7 @@ public class Merge
     return arr;
   }
   
-  private static void merge (int[] arr, int[] l, int[]r) {
+  private static void merge (int[] arr, int[] l, int[] r) {
       int leftSize = l.length;
       int rightSize = r.length;
       int i = 0, j = 0, k = 0;
@@ -58,7 +58,7 @@ public class Merge
           k++;
       }
       while (j < rightSize) {
-          arr[k] = l[j];
+          arr[k] = r[j];
           j++;
           k++;
       }
